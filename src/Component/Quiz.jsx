@@ -29,8 +29,8 @@ const Quiz = () => {
 
     const handleNextQuestionButton = () => {
         if (!isAnswered) {
-            setErrorMessage(<div className='flex justify-center mt-8 bg-[rgb(255,224,224)] rounded-2xl w-full border border-red-500 p-0.5 lg:w-1/2'>
-                <div className='text-red-500 py-2 '>
+            setErrorMessage(<div className='flex justify-center mt-8 bg-[#dc0a0a] rounded-lg w-full border border-red-500 p-0.5 lg:w-1/2'>
+                <div className='text-white py-2 '>
                     <p >Please Select one answer for the question</p>
                 </div>
             </div>)
@@ -101,7 +101,7 @@ const Quiz = () => {
                         onQuestionAnswered={(ans) => setIsAnswered(ans)}
                     />
                     <div className='flex justify-center'>
-                        <div className='m-auto text-white bg-indigo-600 w-full mt-4 rounded-lg text-md font-semibold py-[14px] px-[20px] uppercase cursor-pointer text-center lg:px-[0px] lg:w-49' onClick={handleNextQuestionButton}>
+                        <div className='m-auto text-white bg-indigo-600 w-[70%] mt-4 rounded-lg text-base font-semibold py-[12px] px-[20px] uppercase cursor-pointer text-center lg:px-[0px] lg:w-49' onClick={handleNextQuestionButton}>
                             Next Question
                         </div>
                     </div>
